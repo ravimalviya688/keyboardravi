@@ -14,7 +14,7 @@ func GetFloat() (float64, error) {
 	if err != nil {
 		return 0, err
 	}
-	fmt.Println(score)
+	fmt.Printf(" that you entered %v", score)
 	scoreTrimmed := strings.TrimSpace(score)
 	scoreValue, err := strconv.ParseFloat(scoreTrimmed, 64)
 
